@@ -1,0 +1,13 @@
+<h1>Uplaoded Images</h1> 
+    <div> 
+        <% items.forEach(function(image) { %> 
+        <div> 
+            <div> 
+
+                  <img src="data:image/<%=image.imagefile.contentType%>;base64, 
+                  <%=image.imagefile.data.toString('base64')%>"> 
+                
+            </div> 
+        </div> 
+        <% }) %> 
+    </div> 
